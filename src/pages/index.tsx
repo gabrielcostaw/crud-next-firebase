@@ -56,7 +56,7 @@ export default function Home() {
       <Layout titulo="Cadastro Simples">
         {visivel === 'tabela' ? (
           <>
-            <div className="flex justify-end">
+            <div className="flex justify-start">
               <Botao className="mb-5" 
                 onClick={() => novoCliente(Cliente.vazio())}>
                 Novo Cliente

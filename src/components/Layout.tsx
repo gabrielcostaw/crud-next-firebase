@@ -9,7 +9,7 @@ export default function Layout (props: LayoutProps) {
     return (
         <div className={`
         backdrop-blur-md
-        flex flex-col w-2/3
+        flex flex-col w-11/12
         bg-white/60 text-gray-800 rounded-xl
         shadow-2xl
         border border-white/20

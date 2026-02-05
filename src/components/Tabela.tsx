@@ -61,7 +61,7 @@ export default function Tabela (props: TabelaProps) {
         }
         
         return (
-            <table className="w-full rounded-xl overflow-hidden">
+            <table className="w-full rounded-md overflow-x-auto">
                 <thead className={`
                     bg-gradient-to-r from-purple-500 to-purple-800 text-gray-50
                 `}>
