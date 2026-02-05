@@ -14,7 +14,6 @@ export default function Layout (props: LayoutProps) {
         shadow-2xl
         border border-white/20
         w-full max-w-screen-md mx-auto
-        overflow-x-auto
         `}>
             <Titulo>{props.titulo}</Titulo>
             <div className='p-6'>
