@@ -17,10 +17,10 @@ export default function Tabela (props: TabelaProps) {
         function renderizarCabecalho () {
         return (
                 <tr>
-                    <th className="text-left p-4"> Código</th>
-                    <th className="text-left p-4"> Nome</th>
-                    <th className="text-left p-4"> Idade</th>
-                    {exibirAcoes ? <th className="text-center p-4"> Ações</th> : false}
+                    <th className="text-left p-4 w-4/10"> Código</th>
+                    <th className="text-left p-4 w-3/10"> Nome</th>
+                    <th className="text-left p-4 w-2/10"> Idade</th>
+                    {exibirAcoes ? <th className="text-center p-4 w-3/10"> Ações</th> : false}
                 </tr>
             )
         }
@@ -31,9 +31,9 @@ export default function Tabela (props: TabelaProps) {
                     <tr key={cliente.id} className={`
                         ${i % 2 === 0 ? 'bg-purple-200' : 'bg-purple-100'}
                     `}>
-                        <td className="text-left p-4">{cliente.id}</td>
-                        <td className="text-left p-4">{cliente.nome}</td>
-                        <td className="text-left p-4">{cliente.idade}</td>
+                        <td className="text-left p-4 overflow-auto">{cliente.id}</td>
+                        <td className="text-left p-4 overflow-auto">{cliente.nome}</td>
+                        <td className="text-left p-4 overflow-auto">{cliente.idade}</td>
                         {exibirAcoes ? renderizarAcoes(cliente) : false}
                     </tr>
                 )
@@ -42,7 +42,7 @@ export default function Tabela (props: TabelaProps) {
 
         function renderizarAcoes (cliente: Clientes) {
             return (
-                <td className="flex justify-center items-center">
+                <td className="flex justify-center items-center rounded-md">
                     {props.clienteSelecionado ? (
                     <button onClick={() => props.clienteSelecionado?.(cliente)}
                     className={styleButtonEdit}>
@@ -61,7 +61,8 @@ export default function Tabela (props: TabelaProps) {
         }
         
         return (
-            <table className="w-full rounded-md overflow-x-auto">
+            <div className="overflow-x-auto rounded-lg">
+            <table className="w-full rounded-xl overflow-x-auto table-fixed">
                 <thead className={`
                     bg-gradient-to-r from-purple-500 to-purple-800 text-gray-50
                 `}>
@@ -71,6 +72,7 @@ export default function Tabela (props: TabelaProps) {
                 {renderizarDados()}
                 </tbody>
             </table>
+            </div>
         )
 
 }

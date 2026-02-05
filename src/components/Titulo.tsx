@@ -1,5 +1,5 @@
 interface TituloProps {
-    children: any // Ou React.ReactNode para ser mais preciso
+    children: any 
 }
 export default function Titulo (props: TituloProps) {
     return (
