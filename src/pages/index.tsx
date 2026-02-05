@@ -51,7 +51,7 @@ export default function Home() {
   return (
     <div className={`
       flex justify-center items-center h-screen
-      bg-gradient-to-r from-blue-500 to to-purple-500 text-white
+      bg-gradient-to-br from-blue-600 via-purple-500 to-pink-500   text-white
     `}>
       <Layout titulo="Cadastro Simples">
         {visivel === 'tabela' ? (

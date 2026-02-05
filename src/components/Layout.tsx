@@ -8,8 +8,13 @@ interface LayoutProps {
 export default function Layout (props: LayoutProps) {
     return (
         <div className={`
+        backdrop-blur-md
         flex flex-col w-2/3
-        bg-white text-gray-800 rounded-md
+        bg-white/60 text-gray-800 rounded-xl
+        shadow-2xl
+        border border-white/20
+        w-full max-w-screen-md mx-auto
+        overflow-x-auto
         `}>
             <Titulo>{props.titulo}</Titulo>
             <div className='p-6'>
@@ -18,3 +23,7 @@ export default function Layout (props: LayoutProps) {
         </div>
     )
 }   
+
+    // backdrop-blur-md
+    //     flex flex-col w-2/3
+    //     bg-white text-gray-800 rounded-md

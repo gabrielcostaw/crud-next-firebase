@@ -8,8 +8,8 @@ interface TabelaProps {
     clienteExcluido?: (cliente:Clientes) => void
 }
 
-const styleButtonEdit = "flex justify-center items-center text-green-600 rounded-full p-2 m-1 hover:bg-purple-50"
-const styleButtonLixo = "flex justify-center items-center text-red-600 rounded-full p-2 m-1 hover:bg-purple-50"
+const styleButtonEdit = "flex justify-center items-center text-blue-800 rounded-full p-2 m-1 mt-2 hover:bg-purple-50 hover:outline hover:outline-2 hover-outline-blue"
+const styleButtonLixo = "flex justify-center items-center text-red-600 rounded-full p-2 m-1  mt-2 hover:bg-purple-50 hover:outline hover:outline-2 hover-outline-red"
 export default function Tabela (props: TabelaProps) {
     
         const exibirAcoes = props.clienteExcluido || props.clienteSelecionado
