@@ -61,8 +61,8 @@ export default function Tabela (props: TabelaProps) {
         }
         
         return (
-            <div className="rounded-lg">
-            <table className="w-full rounded-xl overflow-x-auto table-fixed">
+            <div className="rounded-lg overflow-x-hidden">
+            <table className="w-full table-fixed">
                 <thead className={`
                     bg-purple-800 text-gray-50
                 `}>
