@@ -8,8 +8,8 @@ interface TabelaProps {
     clienteExcluido?: (cliente:Clientes) => void
 }
 
-const styleButtonEdit = "flex justify-center items-center text-blue-800 rounded-full p-2 m-1 mt-2 hover:bg-purple-50 hover:outline hover:outline-2 hover-outline-blue"
-const styleButtonLixo = "flex justify-center items-center text-red-600 rounded-full p-2 m-1  mt-2 hover:bg-purple-50 hover:outline hover:outline-2 hover-outline-red"
+const styleButtonEdit = "flex justify-center items-center text-blue-800 rounded-full p-2 mt-2 hover:bg-purple-50 hover:outline hover:outline-2 hover-outline-blue"
+const styleButtonLixo = "flex justify-center items-center text-red-600 rounded-full p-2 mt-2 hover:bg-purple-50 hover:outline hover:outline-2 hover-outline-red"
 export default function Tabela (props: TabelaProps) {
     
         const exibirAcoes = props.clienteExcluido || props.clienteSelecionado
@@ -61,10 +61,10 @@ export default function Tabela (props: TabelaProps) {
         }
         
         return (
-            <div className="overflow-x-auto rounded-lg">
+            <div className="rounded-lg">
             <table className="w-full rounded-xl overflow-x-auto table-fixed">
                 <thead className={`
-                    bg-gradient-to-r from-purple-500 to-purple-800 text-gray-50
+                    bg-purple-800 text-gray-50
                 `}>
                 {renderizarCabecalho()}
                 </thead>
