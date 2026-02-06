@@ -1,40 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🚀 CRUD de Clientes — Next.js + TypeScript + Firebase
 
-## Getting Started
+Aplicação CRUD moderna desenvolvida com **Next.js**, **TypeScript**, **Tailwind CSS** e **Firebase Firestore**, focada em boas práticas, organização de código e interface responsiva.
 
-First, run the development server:
+Este projeto foi criado para consolidar conhecimentos em desenvolvimento fullstack moderno utilizando tecnologias atuais do mercado.
+
+---
+
+## 🌐 Demonstração
+
+👉 **Acesse online:** https://crud-next-firebase-red.vercel.app/
+
+---
+
+📸 Preview do projeto:
+
+![Preview do projeto - Home](./interface.jpeg)
+![Preview do projeto - Formulário](./formulario.jpeg)
+
+---
+
+## ✨ Funcionalidades
+
+✅ Cadastro de clientes  
+
+✅ Listagem dinâmica integrada ao Firebase  
+
+✅ Edição de registros  
+
+✅ Exclusão de clientes  
+
+✅ Interface responsiva (mobile-first)  
+
+✅ Componentização reutilizável  
+
+✅ Atualização em tempo real via Firestore  
+
+---
+
+## 🛠️ Stack Tecnológica
+
+### Frontend
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+
+### Backend / Database
+
+- Firebase
+- Firestore Database
+
+### Deploy
+
+- Vercel
+
+---
+
+## 📁 Estrutura do Projeto
+
+src/
+├── components/ → Componentes reutilizáveis
+├── core/ → Modelos e regras de negócio
+├── firebase/ → Configuração e integração Firebase
+└── pages/ → Rotas da aplicação (Next.js)
+
+---
+
+## 🚀 Rodando localmente
 
 ```bash
+# Clone o repositório
+git clone https://github.com/gabrielcostaw/crud-next-firebase
+
+# Instale as dependências
+npm install
+
+# Inicie o projeto
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔐 Variáveis de ambiente
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Crie um arquivo .env.local na raiz do projeto:
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+NEXT_PUBLIC_FIREBASE_API_KEY=
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=
+NEXT_PUBLIC_FIREBASE_APP_ID=
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Preencha os valores com as configurações do seu projeto Firebase.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+🧠 Objetivo do Projeto
 
-To learn more about Next.js, take a look at the following resources:
+Este projeto foi desenvolvido para praticar:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+Arquitetura de aplicações React com Next.js
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Tipagem forte utilizando TypeScript
 
-## Deploy on Vercel
+Integração com Firebase Firestore
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Organização de código com separação de responsabilidades
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Construção de interfaces responsivas com Tailwind CSS
+
+---
+
+👨‍💻 Autor
+
+Gabriel Costa
+
+LinkedIn: https://www.linkedin.com/in/gabriel-costa-228ab0382/
+
+GitHub: https://github.com/gabrielcostaw
+
+Email: gcstsantos@gmail.com
